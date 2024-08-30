@@ -3,15 +3,21 @@ let playerCounter =document.querySelector("#player-counter");
 let compCounter = document.querySelector("#comp-counter");
 let you=0;
 let comp=0;
+let word;
 
 
 function Randomider(value){
     let randomInt;
-    let word;
     const min = 1;
     const max = 3;
     randomInt = Math.floor(Math.random() * (max - min + 1)) + min;
+    word = createWord(randomInt);
+    calculate(randomInt,value,word);
 
+    
+}
+
+function createWord(randomInt){
     if(randomInt === 1){
         word = "Rock";
     }
@@ -21,7 +27,11 @@ function Randomider(value){
     else{
         word = "Scissor";
     }
-    
+    return word;
+}
+
+function calculate(randomInt,value){
+        
     if( randomInt === value){
         result.innerText=`oh no its a draw , The computer put ${word}`;
     }
@@ -36,6 +46,7 @@ function Randomider(value){
          you+=1;
          playerCounter.textContent = you;
     }
+
 }
 
 function clearDisplay(){
