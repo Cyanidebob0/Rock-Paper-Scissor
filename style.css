@@ -55,17 +55,17 @@
 
 #rock:hover{
     
-    border: 4px solid black;
+    border: 6px solid white;
 }
 
 #paper:hover{
     
-    border: 4px solid black;
+    border: 6px solid white;
 }
 
 #scissor:hover{
     
-    border: 4px solid black;
+    border: 6px solid white;
 }
 
 #rock:active{
