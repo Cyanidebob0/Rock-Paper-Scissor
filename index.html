@@ -12,23 +12,28 @@
     </header>
 
     <div id="symbols">
-        <div id="rock" class="icons"></div>
-        <div id="paper" class="icons"></div>
-        <div id="scissor" class="icons"></div>
+        <div id="rock" class="icons" onclick="Randomider(1)"></div>
+        <div id="paper" class="icons" onclick="Randomider(2)"></div>
+        <div id="scissor" class="icons"onclick="Randomider(3)"></div>
     </div>
 
     <div id="counter">
-        <div id="player-counter"class="counter-style">0
-            <p>you</p>
+        <div class="counter-style">
+            <p id="player-counter">0</p>
+            <p id ="cv">you</p>
         </div>
-        <div id="comp-counter" class="counter-style">0
-            <p>comp</p>
+        <div  class="counter-style">
+            <p id="comp-counter">0</p>
+            <p id="cv">comp</p>
         </div>
     </div>
 
     <div id="result">
-        Hurray u won!!!!, computer put scissor
+        TO play the game , Click one the above
     </div>
+
+    <button id="reset-button" onclick="clearDisplay()">Reset </button>
+
  
     
     <script src="app.js"></script>
